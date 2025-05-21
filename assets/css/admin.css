@@ -1,0 +1,221 @@
+/**
+ * CADSSL Admin Styles
+ */
+
+/* Dashboard styles */
+.cadssl-dashboard-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cadssl-dashboard-score-container {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.cadssl-dashboard-score {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f0f0f1;
+    margin-bottom: 10px;
+}
+
+.cadssl-dashboard-score-circle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cadssl-dashboard-summary {
+    flex: 1;
+}
+
+.cadssl-dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.cadssl-dashboard-card {
+    width: calc(33.333% - 20px);
+    margin: 0 10px 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.cadssl-dashboard-status-positive {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.cadssl-dashboard-status-negative {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.cadssl-dashboard-card-actions {
+    margin-top: 15px;
+}
+
+.cadssl-dashboard-actions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cadssl-dashboard-actions li {
+    margin-bottom: 10px;
+}
+
+.cadssl-dashboard-actions a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2271b1;
+}
+
+.cadssl-dashboard-actions .dashicons {
+    margin-right: 5px;
+}
+
+.cadssl-status-critical {
+    color: white;
+    background-color: #dc3232;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cadssl-status-warning {
+    color: white;
+    background-color: #ffb900;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cadssl-status-info {
+    color: white;
+    background-color: #72aee6;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Admin card styles */
+.cadssl-admin-card {
+    background: white;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.cadssl-admin-card h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Form styles */
+.cadssl-form-table {
+    margin-top: 20px;
+}
+
+.cadssl-form-table th {
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.cadssl-form-row {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.cadssl-form-row:last-child {
+    border-bottom: none;
+}
+
+.cadssl-form-field-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cadssl-form-field-description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Progress indicators */
+.cadssl-progress-bar {
+    height: 20px;
+    background-color: #f0f0f1;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.cadssl-progress-bar-inner {
+    height: 20px;
+    background-color: #2271b1;
+    border-radius: 4px;
+    width: 0%;
+}
+
+.cadssl-save-indicator {
+    display: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* File permissions table */
+.cadssl-issue-critical {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.cadssl-issue-warning {
+    color: #ffb900;
+    font-weight: bold;
+}
+
+/* Responsive fixes */
+@media screen and (max-width: 782px) {
+    .cadssl-dashboard-header {
+        flex-direction: column;
+    }
+    
+    .cadssl-dashboard-score-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .cadssl-dashboard-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .cadssl-form-table th, 
+    .cadssl-form-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
