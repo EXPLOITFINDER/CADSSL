@@ -1,4 +1,4 @@
-# CADSSL Security Plugin
+# CADSSL Wordpress Security Plugin
 
 A comprehensive WordPress security plugin focusing on SSL enforcement, security headers, malware detection, and overall website protection.
 
